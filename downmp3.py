@@ -56,8 +56,6 @@ def menu():
       for x in ["\\","-","/","-"]:
         print("\r downloading %s ... %s" % (ak+'.mp3', x), end="")
     print("\nselesai download di simpan di %s " % (ak+'.mp3'))
-    lonte = input("TEKAN ENTER UNTUK DOWNLOAD LAGI")
-    menu()
 def download(url, filenama):
     with open(filenama, "wb") as f:
          res = requests.get(url).content
